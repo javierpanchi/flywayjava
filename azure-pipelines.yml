@@ -15,7 +15,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'mvn exec:java -Dexec.mainClass="com.example.flyway.Main"'
+    goals: 'exec:java -Dexec.mainClass="com.example.flyway.Main"'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
